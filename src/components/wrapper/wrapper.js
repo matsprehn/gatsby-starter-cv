@@ -9,8 +9,8 @@ const Wrapper = styled.main.attrs({
   border-bottom: 1px solid #ebf2f6;
   word-wrap: break-word;
   background-color: #fff;
-  margin: 0px auto 30px auto;
-  top: -200px;
+  margin: 0px auto -50vh auto;
+  top: -50vh;
   padding: 50px;
   box-shadow: 0 0 0 0, 0 6px 12px rgba(0, 0, 0, 0.1);
   min-height: 200px;
