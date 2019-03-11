@@ -1,10 +1,12 @@
 import React, { Fragment } from 'react'
 
-export default ({ title = 'about', text = '' }) => {
+export default ({ title = 'about', text = [] }) => {
   return (
     <Fragment>
       <h1>{title}</h1>
-      <p dangerouslySetInnerHTML={{ __html: text }}></p>
+      {text.map(line => (
+        <p>{line}</p>
+      ))}
     </Fragment>
   )
 }

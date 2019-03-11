@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { FaGithub } from "react-icons/fa"
+import { FaGithub, FaFileDownload } from 'react-icons/fa'
 import siteConfig from '../../../data/siteConfig'
 
 const HeaderWrapper = styled.header`
@@ -12,7 +12,7 @@ const HeaderWrapper = styled.header`
   display: block;
   width: 100%;
   z-index: 1000;
-  background-color: #25303B;
+  background-color: #25303b;
 `
 
 const HeaderNav = styled.nav`
@@ -21,18 +21,18 @@ const HeaderNav = styled.nav`
   height: 60px;
   display: flex;
   flex-direction: row;
-  max-width: 960px;
+  width: 80%;
   z-index: 1000;
   justify-content: space-between;
   overflow-x: auto;
   overflow-y: hidden;
-  background-color: #25303B;
+  background-color: #25303b;
 `
 
 const HeaderLinkGroup = styled.div`
   display: flex;
   flex-direction: row;
-` 
+`
 
 const HeaderLink = styled(Link)`
   position: relative;
@@ -48,15 +48,25 @@ const HeaderLink = styled(Link)`
   min-width: 42px;
   z-index: 10;
 `
-const GithubLink = styled(({ className }) => (
-  <a 
-    className={className}
-    href={`https://github.com/${siteConfig.githubUsername}`}
-    target='_blank'
-    rel="noopener noreferrer"
-  >
-    <FaGithub size={32} />
-  </a>
+const HeaderLinks = styled(({ className }) => (
+  <span className={className}>
+    <a
+      className={className}
+      href={`${siteConfig.resumePath}`}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaFileDownload size={32} />
+    </a>
+    <a
+      className={className}
+      href={`https://github.com/${siteConfig.githubUsername}`}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaGithub size={32} />
+    </a>
+  </span>
 ))`
   position: relative;
   display: flex;
@@ -64,15 +74,12 @@ const GithubLink = styled(({ className }) => (
   color: #fff;
   border: 0;
   margin: 0;
-  margin-right: 0.5rem;
   padding-left: 20px;
-  padding-right: 20px;
   min-width: 42px;
   z-index: 10;
 `
-
 class Header extends React.Component {
-  render () {
+  render() {
     const { headerLinks } = siteConfig
 
     return (
@@ -85,7 +92,7 @@ class Header extends React.Component {
               </HeaderLink>
             ))}
           </HeaderLinkGroup>
-          <GithubLink />
+          <HeaderLinks />
         </HeaderNav>
       </HeaderWrapper>
     )
