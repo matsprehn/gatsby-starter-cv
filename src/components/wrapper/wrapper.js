@@ -6,15 +6,14 @@ const Wrapper = styled.main.attrs({
   position: relative;
   border-radius: 3px;
   width: 80%;
-  max-width: 960px;
   border-bottom: 1px solid #ebf2f6;
   word-wrap: break-word;
   background-color: #fff;
   margin: 0px auto 30px auto;
-  top: -100px;
+  top: -200px;
   padding: 50px;
   box-shadow: 0 0 0 0, 0 6px 12px rgba(0, 0, 0, 0.1);
-  min-height: 150px;
+  min-height: 200px;
 
   @media (max-width: 780px) {
     width: 90%;

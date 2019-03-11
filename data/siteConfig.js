@@ -1,91 +1,93 @@
 module.exports = {
-  siteTitle: 'Hi! I\'m Francisco!',
-  siteDescription: `Create your online curriculum in just a few minutes with this starter`,
-  keyWords: ['gatsbyjs', 'react', 'curriculum'],
-  authorName: 'Francisco Santos',
-  twitterUsername: '_franciscodf',
-  githubUsername: 'santosfrancisco',
-  authorAvatar: '/images/avatar.jpeg',
-  authorDescription: `Developer, passionate about what I do. Always interested in how the sites were made, I started to study HTML by hobby. <br />
-    In 2012 I started working as a support technician and I approached the developers.
-    In 2015, I started to study C # and started to contribute with the team giving maintenance in an application in C # and .NET. <br />
-    I currently work as a frontend developer and mainly work with <strong>Javascript, NodeJS e React.</strong>`,
+  siteTitle: 'Mat Sprehn',
+  siteDescription: `Experienced Full Stack Developer And Leader`,
+  keyWords: ['java', 'react', 'node', 'nodejs'],
+  authorName: 'Mat Sprehn',
+  twitterUsername: null,
+  githubUsername: 'matsprehn',
+  authorAvatar: '/images/profile.PNG',
+  authorDescription: `<p>I am a software engineer with a passion for learning and development. I pride myself on problem solving, regardless if the solution is technical or not.</p>
+  <p>Recently, my passion has been growing teams in both technical expertise and in delivery maturity. My ultimate goal on any team is making myself replaceable.</p>`,
   skills: [
     {
-      name: 'HTML',
-      level: 70
+      name: 'Java',
+      level: 80
     },
     {
-      name: 'CSS',
+      name: 'Postgres',
+      level: 75
+    },
+    {
+      name: 'Node.js',
       level: 60
-    },
-    {
-      name: 'Javascript',
-      level: 50
-    },
-    {
-      name: 'NodeJs',
-      level: 40
     },
     {
       name: 'React',
-      level: 60
+      level: 50
     },
     {
-      name: 'Git',
-      level: 70
+      name: 'Devops',
+      level: 50
+    },
+    {
+      name: "REST APIS",
+      level: 65
+    },
+    {
+      name: "Git",
+      level: 75
     }
   ],
   jobs: [
     {
-      company: "Lendico",
+      company: "Walt Disney Studios",
       begin: {
         month: 'apr',
-        year: '2018'
+        year: '2017'
       },
       duration: null,
-      occupation: "Frontend developer",
-      description: "I integrate the Frontend team responsible for developing and maintaining the online lending platform."
-  
+      occupation: "Staff Software Engineer",
+      description: "Leading a team of 7 engineers in implementing a centralized, streamlined solution of media operations.",
+      skills:["node", "react", "postgres", "elasticsearch", "sqs", "s3", "salesforce", "jenkins", "docker", "openshift", "git"],
     }, {
-      company: "Anapro",
+      company: "Dell",
       begin: {
-        month: 'dec',
+        month: 'May',
         year: '2016'
       },
-      duration: '1 yr e 5 mos',
-      occupation: "Fullstack developer",
-      description: "Development and maintenance, corrective and preventive, of web applications for the real estate market."
+      duration: '11 Months',
+      occupation: "Senior Software Engineer",
+      description: "Led a team of 15 engineers in implementing a solution that monitors database activity and backups, and is capable of determining application consistency from a series of inconsistent partial backups",
+      skills:["java", "spring", "elasticsearch", "golang", "git"]
     }, {
-      company: "Anapro",
+      company: "EMC",
       begin: {
-        month: 'set',
-        year: '2012'
+        month: 'Jan',
+        year: '2014'
       },
-      duration: '4 yrs e 3 mos',
-      occupation: "Support Technician",
-      description: "Responsible for the implementation and parameterization of the system, training and customer support. Acting also in person in real estate launches guaranteeing the success and good use of the tool."
-  
+      duration: '2 years 5 Months',
+      occupation: "Software Engineer",
+      description: "Led a team of 7 in architecting and implementing authentication and authorization RESTfully using Spring Security, resulting in over 15 teams in 4 different locations using this service in production.",
+      skills:["java", "spring", "spring-security", "ldap", "jwt", "certificate management", "perforce", "git"]
     },
-    /* ... */
   ],
   social: {
-    twitter: "https://twitter.com/_franciscodf",
-    linkedin: "https://www.linkedin.com/in/santos-francisco",
-    github: "https://github.com/santosfrancisco",
-    email: "yoshi.df@gmail.com"
+    twitter: null,
+    linkedin: "https://www.linkedin.com/in/matsprehn",
+    github: "https://github.com/matsprehn",
+    email: "mat@sprehn.io"
   },
-  siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
+  siteUrl: 'https://github.com/matsprehn/gatsby-starter-cv',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
-  siteCover: '/images/cover.jpeg',
-  googleAnalyticsId: 'UA-131359385-1',
+  siteCover: '/images/background.jpg',
+  googleAnalyticsId: null,
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
-  icon: 'src/assets/gatsby-icon.png',
+  icon: null,
   headerLinks: [
     {
-      label: 'Francisco Santos',
+      label: 'Mat Sprehn',
       url: '/',
     }
   ]

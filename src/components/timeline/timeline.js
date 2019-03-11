@@ -16,6 +16,11 @@ const Timeline = ({ className }) => {
             </span>
             <h2 className='timeline__title'>{job.occupation} at {job.company} <br /><small className='timeline__title--small'>({job.duration || 'present'})</small></h2>
             <p>{job.description}</p>
+            {job.skills && (
+              <React.Fragment>
+                <p className="skills"><strong>Technologies:</strong> {job.skills && job.skills.join(' | ')}</p>
+              </React.Fragment>
+            )}
           </div>
         </article>
       ))}
@@ -95,12 +100,12 @@ export default styled(Timeline)`
     position: absolute;
     top: -5px;
     left: 30%;
-    width: 10px; 
+    width: 10px;
     height: 10px;
     transform: rotate(-45deg);
   }
   .timeline__item div.inner p {
-    padding: 15px;
+    padding: 10px;
     margin: 0;
     font-size: 14px;
     background: #fff;
@@ -125,6 +130,11 @@ export default styled(Timeline)`
   .timeline__item div.inner {
     width: 40%;
     margin: 5px 0 0 0;
+  }
+  .skills {
+    padding-top: 0 !important;
+    border-top: 1px solid lightgrey;
+    text-transform: capitalize;
   }
 
   .timeline__item div.inner h2:after {
